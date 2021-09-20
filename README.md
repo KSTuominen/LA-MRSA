@@ -1,4 +1,4 @@
-## Code for modelling the spread of LA-MRSA in a Swedish pig herd
+## Code for modelling environmentally mediated spread of livestock-associated methicillin-resistant Staphylococcus aureus in a pig herd
 This repository contains the code used in the manuscript "Modelling the spread of livestock-associated methicillin-resistant Staphylococcus aureus in a Swedish pig herd" by Tuominen et al. The model is written using R language (version 4.0.3).
 ### Dependencies
 Running the model requires installing the SimInf package. The latest released version can be installed from [CRAN](https://cran.r-project.org/web/packages/SimInf/index.html) by

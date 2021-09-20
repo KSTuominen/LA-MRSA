@@ -13,4 +13,12 @@ events <- read.csv("events/events-d731-3000-2002.csv", header = TRUE)
 
 model@tspan <- as.double(731:3000)
 model@events <- SimInf_events(model@events@E, model@events@N, events)
-final_result <- trajectory(run(model))
+
+final_result <- run(model)
+
+## Plot the whole herd prevalance over the study period in this trajectory
+plot(prevalence(final_result, Isows + Igilts + Ipiglets + Igrowers +
+                    Ifinish ~ Isows + Igilts + Ipiglets +
+                    Igrowers + Ifinish + Ssows +
+                    Sgilts + Spiglets + Sgrowers +
+                    Sfinish), type = "l", ylim = c(0, 1))
